@@ -12,11 +12,22 @@ const Navbar = () => {
     <div className="flex justify-between items-center h-24 max-w-[1240px] px-4 text-white">
       <h1 className="w-full text-3xl font-bold text-[#00df9a]">REACT.</h1>
       <ul className="hidden md:flex">
-        <li className="p-4">Home</li>
-        <li className="p-4">Company</li>
-        <li className="p-4">Resources</li>
-        <li className="p-4">About</li>
-        <li className="p-4">Contacts</li>
+        <li className="p-4  hover:text-greenColor">
+          <a href="#Hero">Home</a>
+        </li>
+
+        <li className="p-4 hover:text-greenColor">
+          <a href="#Analytics">Company</a>
+        </li>
+        <li className="p-4 hover:text-greenColor">
+          <a href="#Newsletters">Resources</a>
+        </li>
+        <li className="p-4 hover:text-greenColor">
+          <a href="#Cards">About</a>
+        </li>
+        <li className="p-4 hover:text-greenColor">
+          <a href="#Footer">Contacts</a>
+        </li>
       </ul>
 
       <div onClick={handleNav} className="block md:hidden">
@@ -30,11 +41,21 @@ const Navbar = () => {
         }
       >
         <h1 className="w-full text-3xl font-bold text-[#00df9a]">REACT.</h1>
-        <li className="p-4 border-b border-gray-600">Home</li>
-        <li className="p-4 border-b border-gray-600">Company</li>
-        <li className="p-4 border-b border-gray-600">Resources</li>
-        <li className="p-4 border-b border-gray-600">About</li>
-        <li className="p-4 border-b border-gray-600">Contacts</li>
+        <li className="p-4 border-b border-gray-600">
+          <a href="#Hero">Home</a>
+        </li>
+        <li className="p-4 border-b border-gray-600">
+          <a href="#Analytics">Company</a>
+        </li>
+        <li className="p-4 border-b border-gray-600">
+          <a href="#Newsletters">Resources</a>
+        </li>
+        <li className="p-4 border-b border-gray-600">
+          <a href="#Cards">About</a>
+        </li>
+        <li className="p-4 border-b border-gray-600">
+          <a href="#Footer">Contacts</a>
+        </li>
       </ul>
       {/* </div> */}
     </div>
